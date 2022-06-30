@@ -1,5 +1,5 @@
+import { Navigation } from "./routes/Navigation";
 
-import { Navigation } from './router/Navigation';
 
 const App = () => {
   return (
