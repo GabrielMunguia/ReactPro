@@ -4,10 +4,7 @@
     img?: string;
   }
   
-  export interface ProductCardProps {
-    children: React.ReactElement | React.ReactElement[];
-    product: Product;
-  }
+ 
   export interface ProductContextProps {
     product: Product;
     counter: number;
