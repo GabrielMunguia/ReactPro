@@ -9,16 +9,10 @@ interface useProductArgs{
 
 export const useProduct=({onChange,product,value=0}:useProductArgs)=>{
     const [counter, setCounter] = useState(value)
-    const isController= useRef(!!onChange);
+
 
     const increaseBy= (value:number)=>{
         const newValue= Math.max(0, counter+value);
-
-
-        if(isController.current){
-            onChange!({count:value,product});
-            return ; 
-        }
 
         setCounter(newValue);
         onChange&&onChange({count:newValue,product});
