@@ -2,6 +2,7 @@
     id: string;
     title: string;
     img?: string;
+    
   }
   
  
@@ -10,3 +11,13 @@
     counter: number;
     increaseBy: (value: number) => void;
   }
+
+
+  export interface productArgs{
+    count:number,
+    product:Product
+  }
+
+  export interface ProductInCard extends Product{
+    count:number;
+ }
